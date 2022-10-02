@@ -1,0 +1,17 @@
+<div>
+  <nav>
+    <a routerLink="/events" routerLinkActive="active">Events</a>
+    <a routerLink="/login" routerLinkActive="active">Login</a>
+  </nav>
+ 
+  <h1>Hello {{this.userName}} from Bridgelabz</h1>
+  <img [src]="imgUrl" (click)="onClick($event)"
+    alt="The Bridgelabz Logo"
+    />
+    <div>
+      <input (input)="onInput($event)" [(ngModel)]="userName" /><br/><br/>
+      <span class="error-output">{{this.nameError}}</span>
+    </div>
+
+</div>
+<router-outlet></router-outlet> 
